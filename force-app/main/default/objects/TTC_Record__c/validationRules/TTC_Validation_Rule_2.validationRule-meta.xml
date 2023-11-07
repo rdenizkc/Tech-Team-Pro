@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TTC_Validation_Rule_2</fullName>
+    <active>true</active>
+    <description>Technical Information Needed / Environment / Engagement Summary /
+Scope cannot be blank when the collaboration type is &quot;version update.&quot;</description>
+    <errorConditionFormula>IF(  ISPICKVAL( Collaboration_Type__c , &apos;Version Update&apos;)  ,
+ 
+ISBLANK( Technical_information_needed__c )  ||  
+ISBLANK( TEXT(Environment__c)  )  ||  
+ISBLANK( Engagement_Summary__c )  ||  
+ISBLANK( Scope__c ) 
+, 
+False)</errorConditionFormula>
+    <errorMessage>Technical Information Needed / Environment / Engagement Summary /
+Scope cannot be blank when the collaboration type is &quot;version update.&quot;</errorMessage>
+</ValidationRule>

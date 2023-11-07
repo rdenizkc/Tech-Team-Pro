@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_VR1</fullName>
+    <active>true</active>
+    <description>Opportunity Account information must be filled; if not, prevent status update to &apos;Closed Won&apos;</description>
+    <errorConditionFormula>ISBLANK( AccountId )  &amp;&amp;  ISPICKVAL( StageName , &apos;Closed Won&apos;)</errorConditionFormula>
+    <errorMessage>If Account Name field is empty, you cannot choose &apos;Closed Won&apos;</errorMessage>
+</ValidationRule>

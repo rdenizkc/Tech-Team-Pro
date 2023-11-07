@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TTC_Record_queue_TTC_Record</fullName>
+    <filterScope>Queue</filterScope>
+    <label>TTC Record queue</label>
+    <queue>TTC_Record_queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

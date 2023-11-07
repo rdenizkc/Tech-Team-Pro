@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Compact_Layouts</fullName>
+    <fields>Collaboration_Type__c</fields>
+    <fields>Requestor__c</fields>
+    <fields>TTC_status__c</fields>
+    <fields>TTC_action__c</fields>
+    <fields>Respond_by_Date__c</fields>
+    <label>Custom Compact Layouts</label>
+</CompactLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TTC_Validation_Rule_1</fullName>
+    <active>true</active>
+    <description>A TTC record must always be associated with a lead or opportunity</description>
+    <errorConditionFormula>ISBLANK( Lead__c )   &amp;&amp;   ISBLANK( Opportunity__c )</errorConditionFormula>
+    <errorMessage>A TTC record must always be associated with a lead or opportunity.</errorMessage>
+</ValidationRule>

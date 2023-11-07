@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="SA Details" icon-name="standard:employee" class="sa-tile">
+        <template for:each={saDetails} for:item="sa">
+           
+                <div class="slds-m-around_medium" key={sa.Id}>
+    
+                    <p><b>Name:</b> {sa.Name}</p>
+                    <p><b>Customer Handled:</b> {sa.Customer_Handled__c}</p>
+                    <p><b>Date of Joining:</b> {sa.Date_of_Joining__c}</p>
+                    <p><b>Experience:</b> {sa.Experience__c}</p>
+                    
+                </div>
+            
+        </template>
+    </lightning-card>
+</template>

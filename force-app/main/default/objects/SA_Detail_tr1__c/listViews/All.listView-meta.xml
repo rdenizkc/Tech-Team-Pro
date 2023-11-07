@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Name_tr1__c</columns>
+    <columns>Location_tr1__Latitude__s</columns>
+    <columns>Location_tr1__Longitude__s</columns>
+    <columns>Specilization_tr1__c</columns>
+    <columns>Supervisor_tr1__c</columns>
+    <columns>Experience_tr1__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

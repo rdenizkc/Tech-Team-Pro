@@ -1,0 +1,49 @@
+<template>
+  <div class="demo-only" style="width: 320px">
+    <ul class="slds-has-dividers_around-space">
+      <li class="slds-item">
+        
+        <article class="slds-tile slds-tile_board">
+
+
+
+          <div class="slds-media slds-tile__icon">
+            <lightning-icon icon-name="action:add_contact"  size="small"></lightning-icon>
+          </div>
+        
+          <h3 class="slds-tile__title slds-truncate" title="Sa Name">
+            {sa.Name}
+          </h3>
+
+
+          <div class="slds-tile__detail">
+            <dl class="slds-list_horizontal slds-wrap">
+
+
+
+              <dt class="slds-item_label slds-text-color_weak slds-truncate"
+               title="Name"><b>Name : </b></dt>
+              <dd class="slds-item_detail slds-truncate" title="sa.Name__c">  {sa.Name__c}</dd>
+
+
+
+              <dt class="slds-item_label slds-text-color_weak slds-truncate " title="Customer Handler">
+                <b>Customer Handled :</b> </dt>
+
+              <dd class="slds-item_detail slds-truncate" title="sa.CustomerHandler">{sa.Customer_Handled__c}</dd>
+
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Date of Joining" ><b>Date Of Joining :</b></dt>
+              <dd class="slds-item_detail slds-truncate" title="sa.Date_of_Joining__c">
+                {sa.Date_of_Joining__c}
+              </dd>
+
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Experience"><b>Experience :</b></dt>
+              <dd class="slds-item_detail slds-truncate" title="sa.Experience__c">{sa.Experience__c}</dd>
+
+            </dl>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</template>
